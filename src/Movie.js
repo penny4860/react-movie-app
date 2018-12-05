@@ -8,6 +8,7 @@ import './Movie.css';
 //  3. render() 구현
 class Movie extends Component{
 
+    // propTypes : Movie component 가 props로 전달받는 정보의 type/필수여부를 정의
     static propTypes = {
         title: PropTypes.string.isRequired,
         poster: PropTypes.string.isRequired

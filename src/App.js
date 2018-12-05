@@ -25,14 +25,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {movies.map(movie => {
+        {movies.map((movie, index) => {
           // array.map()
           //  array의 각 element에 어떤 연산을 수행해서 새로운 array 를 리턴
 
           // props 방식
           //  1. Movie component 에 title/poster 정보를 전달한다.
           //  2. Movie component class 에서는 {this.props.title}/{this.props.poster} 로 해당 정보를 사용한다. 
-          return <Movie title={movie.title} poster={movie.poster} />
+          return <Movie title={movie.title} poster={movie.poster} key={index} />
         })}
       </div>
     );

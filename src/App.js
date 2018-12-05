@@ -26,6 +26,9 @@ class App extends Component {
     return (
       <div className="App">
         {movies.map(movie => {
+          // props 방식
+          //  1. Movie component 에 title/poster 정보를 전달한다.
+          //  2. Movie component class 에서는 {this.props.title}/{this.props.poster} 로 해당 정보를 사용한다. 
           return <Movie title={movie.title} poster={movie.poster} />
         })}
       </div>

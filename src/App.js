@@ -22,6 +22,14 @@ const movies = [
 ]
 
 class App extends Component {
+
+  // Component lifecycle
+  //  1. Render: componentWillMount() -> render() -> componentDidMount()
+  //    * Component instance 생성할 때, 위 순서대로 함수가 실행
+  //  2. Update componentWillReceiveProps() -> shouldComponentUpdate() -> componentWillUpdate() -> render() -> componentDidUpdate()
+  //    * Application 의 상태(props/stats)가 변경될 때
+
+
   render() {
     return (
       <div className="App">

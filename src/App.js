@@ -46,20 +46,9 @@ class App extends Component {
     }, 5000)
   }
 
-  // render() {
-  //   return (
-  //     <div className="App">
-  //       {this.state.movies.map((movie, index) => {
-  //         // array.map()
-  //         //  array의 각 element에 어떤 연산을 수행해서 새로운 array 를 리턴
-
-  //         // props 방식
-  //         //  1. Movie component 에 title/poster 정보를 전달한다.
-  //         //  2. Movie component class 에서는 {this.props.title}/{this.props.poster} 로 해당 정보를 사용한다. 
-  
-  //         return <Movie title={movie.title} poster={movie.poster} key={index} />
-  //       })}
   _renderMovies = () => {
+    // array.map()
+    //  array의 각 element에 어떤 연산을 수행해서 새로운 array 를 리턴
     const movies = this.state.movies.map((movie, index) => {
       return <Movie title={movie.title} poster={movie.poster} key={index} />
     })
@@ -67,6 +56,8 @@ class App extends Component {
   }
   
   render() {
+    // state가 비었으면 "Loading"
+    // state가 있으면 함수를 실행
     return (
       <div className="App">
         {this.state.movies ? this._renderMovies() : 'Loading'}

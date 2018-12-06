@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import Movie from './Movie';
 
-
+// Component class 구현방법
+//  1. import react
+//  2. component class 구현
+//  3. render() 구현
 class App extends Component {
 
   // Component lifecycle

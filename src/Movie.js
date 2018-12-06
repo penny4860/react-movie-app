@@ -19,4 +19,14 @@ function MoviePoster({poster}){
     )
 }
 
+// Functional component 도 propTypes를 지정할 수 있다.
+Movie.propTypes = {
+    title: PropTypes.string.isRequired,
+    poster: PropTypes.string.isRequired
+}
+
+MoviePoster.propTypes = {
+    poster: PropTypes.string.isRequired
+}
+
 export default Movie

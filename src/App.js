@@ -41,9 +41,9 @@ class App extends Component {
         movies: [
           {
             title: "Trainspotting",
-            poster: "https://resizing.flixster.com/OUEArjor-MbyCV6GqLU85Hk9jQI=/300x300/v1.bjs1NTQ3OTM7ajsxNzQ2NjsxMjAwOzIwMDA7MTMzMQ"
+            poster: "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Trainspotting_ver2.jpg/250px-Trainspotting_ver2.jpg"
           },
-          ...this.state.movies,
+          ...this.state.movies, //이전에 정의한 array
         ]
       })
     }, 5000)

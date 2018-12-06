@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './Movie.css';
 
@@ -6,36 +6,45 @@ import './Movie.css';
 //  1. import react
 //  2. component class 구현
 //  3. render() 구현
-class Movie extends Component{
+// class Movie extends Component{
 
-    // propTypes : Movie component 가 props로 전달받는 정보의 type/필수여부를 정의
-    static propTypes = {
-        title: PropTypes.string.isRequired,
-        poster: PropTypes.string.isRequired
-    }
+//     // propTypes : Movie component 가 props로 전달받는 정보의 type/필수여부를 정의
+//     static propTypes = {
+//         title: PropTypes.string.isRequired,
+//         poster: PropTypes.string.isRequired
+//     }
 
 
-    render(){
-        return(
-            <div>
-                <MoviePoster poster={this.props.poster} />
-                <h1>{this.props.title}</h1>
-            </div>
-        )
-    }
+//     render(){
+//         return(
+//             <div>
+//                 <MoviePoster poster={this.props.poster} />
+//                 <h1>{this.props.title}</h1>
+//             </div>
+//         )
+//     }
+function Movie({title, poster}){
+    return (
+        <div>
+            <MoviePoster poster={poster} />
+            <h1>{title}</h1>
+        </div>
+    )
 }
 
-class MoviePoster extends Component{
+function MoviePoster({poster}){
+    return (
+        <img src={poster} alt="Movie Poster" />
+    )
+}
 
-    static propTypes = {
-        poster: PropTypes.string.isRequired
-    }
+Movie.propTypes = {
+    title: PropTypes.string.isRequired,
+    poster: PropTypes.string.isRequired
+}
 
-    render(){
-        return(
-            <img src={this.props.poster} alt="Movie Poster" />
-        )
-    }
+MoviePoster.propTypes = {
+    poster: PropTypes.string.isRequired
 }
 
 export default Movie

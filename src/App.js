@@ -33,6 +33,8 @@ class App extends Component {
     ]
   }
 
+  // render() 실행 이후 5초후에 state 를 update
+  // state가 update 되었으므로 다시 render() 가 실행된다.
   componentDidMount(){
     setTimeout(() => {
       this.setState({

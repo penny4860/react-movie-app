@@ -35,6 +35,9 @@ class App extends Component {
     return movies
   }
 
+  // _getMovies를 비동기 함수로 구현
+  //    1) 비동기함수는 이전 코드의 완료여부와 관계없이 수행 : API 받아오는 등의 작업에 적합
+  //    2) await : async 함수 내부에 await 라인은 반드시 끝나야 다음 라인이 실행된다.
   _getMovies =  async () => {
     const movies = await this._callApi()
     this.setState({

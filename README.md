@@ -2,18 +2,24 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+### 1. react project 시작
 
-### `yarn start`
+* npm / Node.js / yarn 설치
 
-* local 에서 개발서버를 실행
+* `yarn create react-app my-app` 실행
+	* https://github.com/facebook/create-react-app#quick-overview
+	* `my-app` 이라는 디렉토리가 생성되고 git repository가 설정됨
 
-### `yarn run build`
+### 2. local 에서 개발서버를 실행
 
-* 먼저 command 를 실행하고 manager console 에 나오는대로 실행.
+* `yarn start`
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. production code를 빌드
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* `yarn run build`
+* `build` directory에 html, css, js 가 묶여서 빌드
+* 이후에 package.json에 홈페이지와 기타 설정은 yarn manager의 명령을 따라서하자.
+	* deploy용 브랜치가 생성되서 remote 에 올가가게 된다.
+	* git pages 기능으로 디플로이.
+

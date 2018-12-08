@@ -47,6 +47,9 @@ class App extends Component {
     //fetch() : 외부 API를 promise 객체를 리턴받는다. (비동기처리)
     //  then : fetch가 끝난 이후 내용을 구현
     //  catch : fetch가 제대로 안되었을 때의 예외처리를 구현
+    //arrow function
+    //  potato => potato.json()
+    //  function(argument) {return argument.json()}
     return fetch('https://yts.am/api/v2/list_movies.json?sort_by=download_count')
     .then(potato => potato.json())
     .then(json => json.data.movies)

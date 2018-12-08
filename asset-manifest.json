@@ -1,13 +1,13 @@
 {
-  "main.css": "/penny4860/react-movie-app-course/static/css/main.fab1de21.chunk.css",
-  "main.js": "/penny4860/react-movie-app-course/static/js/main.f66fff45.chunk.js",
-  "main.js.map": "/penny4860/react-movie-app-course/static/js/main.f66fff45.chunk.js.map",
-  "static/js/1.b23e3e8b.chunk.js": "/penny4860/react-movie-app-course/static/js/1.b23e3e8b.chunk.js",
-  "static/js/1.b23e3e8b.chunk.js.map": "/penny4860/react-movie-app-course/static/js/1.b23e3e8b.chunk.js.map",
-  "runtime~main.js": "/penny4860/react-movie-app-course/static/js/runtime~main.797fa58a.js",
-  "runtime~main.js.map": "/penny4860/react-movie-app-course/static/js/runtime~main.797fa58a.js.map",
-  "static/css/main.fab1de21.chunk.css.map": "/penny4860/react-movie-app-course/static/css/main.fab1de21.chunk.css.map",
-  "index.html": "/penny4860/react-movie-app-course/index.html",
-  "precache-manifest.7c7750e3485d0d6fdd4f486da836f00f.js": "/penny4860/react-movie-app-course/precache-manifest.7c7750e3485d0d6fdd4f486da836f00f.js",
-  "service-worker.js": "/penny4860/react-movie-app-course/service-worker.js"
+  "main.css": "/react-movie-app-course/static/css/main.f9e40360.chunk.css",
+  "main.js": "/react-movie-app-course/static/js/main.7f1dab6a.chunk.js",
+  "main.js.map": "/react-movie-app-course/static/js/main.7f1dab6a.chunk.js.map",
+  "static/js/1.b23e3e8b.chunk.js": "/react-movie-app-course/static/js/1.b23e3e8b.chunk.js",
+  "static/js/1.b23e3e8b.chunk.js.map": "/react-movie-app-course/static/js/1.b23e3e8b.chunk.js.map",
+  "runtime~main.js": "/react-movie-app-course/static/js/runtime~main.e5386a2f.js",
+  "runtime~main.js.map": "/react-movie-app-course/static/js/runtime~main.e5386a2f.js.map",
+  "static/css/main.f9e40360.chunk.css.map": "/react-movie-app-course/static/css/main.f9e40360.chunk.css.map",
+  "index.html": "/react-movie-app-course/index.html",
+  "precache-manifest.c664c4e22e17ec62671d757270f5b3f3.js": "/react-movie-app-course/precache-manifest.c664c4e22e17ec62671d757270f5b3f3.js",
+  "service-worker.js": "/react-movie-app-course/service-worker.js"
 }
